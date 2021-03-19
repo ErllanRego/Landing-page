@@ -1,3 +1,5 @@
+/*----Formatações gerais----*/
+
 *{
     font-size:1em;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -11,15 +13,19 @@ header{
     font-size:2em;
 }
 
+/*----Capa----*/
+
 section.capa{
     color:#111;
     background:url(../img/bluecity.jpg)no-repeat center;
     background-size:cover;
     background-attachment: fixed;
-    border:2px solid red;
+    border:1px solid;
     width:100%;
     height:100%;
 }
+
+/*----Texto da capa----*/
 
 section.capa div.texto{
     text-align:center;
@@ -45,22 +51,89 @@ section.capa div.texto p{
    
 }
 
+/*----Conteudo----*/
+
 section.conteudo{
     background-color:#EEF1F3;
+    border:1px solid;
 }
 
+/*----Listas e formulário----*/
+
 section.conteudo  li{
-    list-style-image:url(../img/script.png);
+    list-style-type:circle;
+}
+
+section.conteudo  li span{
+    list-style-type:circle;
+    color:#B4DB44;
+    text-transform:uppercase;
+    font-size:1.3em;
+   
    
 }
 
+div.lista1,div.formulario{
+    width: 350px;
+    float:left;
+    width:435px;
+    margin:5px;
+}
+
+div.lista2{
+    width: 350px;
+    float:right;
+    width:435px;
+    margin:5px;
+}
+/*----Formulário----*/
+form{
+    background:#111;
+    color:#EEF1F3;
+    text-align:center;
+    position:relative;
+    margin-top:-30px;
+    margin-bottom:30px;
+    font-size:1.3em;
+}
+
+fieldset{
+    border:none;
+}
+
+legend{
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+input.estiloinput{
+    margin-bottom:50px;
+    line-height:50px;
+}
+
+div.botão{
+    margin-top:50px;
+    
+}
+
+div.botão button{
+    line-height:50px;
+    background:#B4DB44;
+    border:none;
+    width:150px;
+}
+/*----Rodapé----*/
+
 footer{
+    clear:both;/*Clear*/
     background:#111;
     text-align:center;
     color:#B4DB44;
     line-height:100px;
     font-size:1.5em;
+    
 }
+
 
 
 

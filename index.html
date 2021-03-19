@@ -11,53 +11,88 @@
 
 <body>
     <header>
-        <div id="logo">Landing page</div>
+        <div id="logo">Landing page</div><!--Cabeçalho-->
     </header>
 
     <main>
-        <section class="capa">
-            <div class="texto">
+        <section class="capa"><!--Inicio capa-->
+            <div class="texto"><!--Texto da capa-->
                 <h1>Black Friday</h1>
                 <h3>Fique ligado(a) nesta promoção!</h3>
                 <h3>Vai valer a pena esperar por isso!</h3>
 
                 <p>Estamos fazendo uma pesquisa para ver qual o curso mais requisitado por vocês!</p>
                 <p>Qual curso você quer ver em promoção na Black Friday deste ano?</p>
-            </div>
-        </section>
+            </div><!--Fim Texto da capa-->
+        </section><!--Fim capa-->
 
-        <section class="conteudo">
+        <section class="conteudo"><!--Inicio conteudo-->
 
-            <div class="lista1">
+            <div class="lista1"><!--Inicio lista1-->
                 <ul>
                     <li>
-                        Desenvolvimento WEB
+                         <span>Desenvolvimento WEB</span>
+                         <p>Aprenda a desenvolver sites e sistemas web do zero utilizando HTML, CSS, Bootstrap, JavaScript, JQuery, PHP, POO e MySQL</p>
                     </li>
                     <li>
-                        Desenvolvimento de games
+                        <span>Desenvolvimento de games</span>
+                        <p>Torne-se um mestre nessa poderosa ferramenta de criação com esse curso que vai lhe ajudar a construir seu primeiro game!</p>
                     </li>
                 </ul>
-            </div>
+            </div><!--Fim lista1-->
 
-            <div class="formulário">
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+            <div class="formulario"><!--Inicio formulário-->
+                <form>
+                    <fieldset>
+                        <legend>Insira suas informações</legend>
 
-            <div class="lista2">
+                        <div>
+                            <label for="nome"></label><!--Nome-->
+                            <input class="estiloinput" type="text" name="nome" id="nome" placeholder="Seu nome">
+                        </div>
+
+                        <div>
+                            <label for="email"></label><!--Email-->
+                            <input class="estiloinput" type="text" name="Email" id="Email" placeholder="Seu email">
+                        </div>
+
+                        <div><!--Inicio opções de curso-->
+                            <label  for="select">Selecione o curso</label>
+                            <div>
+                                <select name="select">
+                                    <option value="valor1">Desenvolvimento web</option>
+                                    <option value="valor2" selected>Desenvolvimento de games</option>
+                                    <option value="valor3">Segurança da informação</option>
+                                    <option value="valor3">Engenharia de software</option>
+                                </select>
+                            </div>
+                            
+                        </div><!--Fim opções de curso-->
+
+                        <div class="botão">
+                            <button type="submit">Enviar</button><!--Botão de enviar-->
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!--Fim formulário-->
+
+            <div class="lista2"><!--Inicio lista2-->
                 <ul>
-                    <li>Segurança da informação</li>
-                    <img src="img/script.png" alt="">
-                    <li>Engenharia de software</li>
+                    <li>
+                        <span>Segurança da informação</span>
+                        <p>Google Hacking. Phishing. Spam. Adware. Banco de Dados Vazados. Vamos ver e aprender a se proteger desses ataques.</p>
+                    </li>
+                    <li>
+                        <span>Engenharia de software</span>
+                        <p>Aprenda tudo o que você precisa para modelar um software, com os principais aspectos da Engenharia de Software e UML</p>
+                    </li>
                 </ul>
-            </div>
-        </section>
+            </div><!--Fim lista2-->
+        </section><!--Fim conteudo-->
     </main>
 
     <footer>
-        <div>&copy;LANDING PAGE 2021</div>
+        <div>&copy;LANDING PAGE 2021</div><!--Rodapé-->
     </footer>
 </body>
 </html>
